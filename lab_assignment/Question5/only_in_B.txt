@@ -1,0 +1,3 @@
+Files only in dirB:
+file3.txt
+uniqueB.py

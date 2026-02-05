@@ -1,0 +1,10 @@
+Command: ./logsummary.sh sample.log
+Explanation: The script validates the existence and readability of the log file, then counts total log entries and the number of INFO, WARNING, and ERROR messages using grep and wc. It extracts the most recent ERROR message with grep and tail. A report is generated with today's date.
+Output:
+Log summary for 'sample.log':
+Total entries: 5
+INFO messages: 2
+WARNING messages: 1
+ERROR messages: 2
+Most recent ERROR: 2025-01-12 10:17:10 ERROR Network timeout
+Report written to logsummary_2026-02-05.txt

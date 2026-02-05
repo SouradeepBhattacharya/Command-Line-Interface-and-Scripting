@@ -1,0 +1,5 @@
+john_doe@domain.com
+invalid-email@domain
+bob@company.org
+user2@Example.Com
+bad@sub.domain.com

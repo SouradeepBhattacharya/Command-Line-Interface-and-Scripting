@@ -1,0 +1,15 @@
+Command: ./bg_move.sh testdir
+Explanation: The script creates a backup subdirectory inside the specified directory and moves each regular file into it using background processes. It prints the PID of each move operation and waits for all background processes to complete.
+Output:
+Moved file1.txt in background with PID 1161
+Moved file2.txt in background with PID 1163
+Waiting for background processes to finish...
+All background processes completed.
+
+Directory structure after running:
+testdir
+testdir/backup
+testdir/backup/file1.txt
+testdir/backup/file2.txt
+testdir/subdir
+testdir/subdir/nested.txt

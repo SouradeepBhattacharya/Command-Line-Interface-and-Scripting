@@ -1,0 +1,7 @@
+Command: gcc -o signal_demo signal_demo.c && ./signal_demo
+Explanation: The program installs handlers for SIGTERM and SIGINT in the parent process. It forks two children: one sleeps for 5 seconds then sends SIGTERM to the parent, the other sleeps for 10 seconds then sends SIGINT. The parent waits using pause() and prints a message when each signal is received. Upon receiving SIGINT, the parent cleans up any remaining child processes and exits gracefully.
+
+Sample output (timing and PIDs will vary):
+Parent received SIGTERM
+Parent received SIGINT
+Parent exiting gracefully.

@@ -1,0 +1,5 @@
+123@letters.com
+Alice123@company.com
+coolguy123@cool.com
+repeat@domain.com
+user1@example.com

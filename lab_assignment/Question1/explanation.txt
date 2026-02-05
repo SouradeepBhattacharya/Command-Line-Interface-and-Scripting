@@ -1,0 +1,19 @@
+Command: ./analyze.sh sample.txt
+Explanation: Running the script on a regular file displays the number of lines, words, and characters. The script uses wc internally to compute these statistics.
+Output:
+File statistics for 'sample.txt':
+Lines: 3
+Words: 11
+Characters: 58
+
+Command: ./analyze.sh testdir
+Explanation: Running the script on a directory counts all files and the number of .txt files recursively. The script uses find to count total files and .txt files (case-insensitive).
+Output:
+Directory statistics for 'testdir':
+Total files: 3
+Number of .txt files: 2
+
+Command: ./analyze.sh nonexistent
+Explanation: When the provided path does not exist, the script prints an error message because it verifies the existence of the argument before performing further logic.
+Output:
+Error: path 'nonexistent' does not exist.

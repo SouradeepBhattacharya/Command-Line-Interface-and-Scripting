@@ -1,0 +1,11 @@
+Command: gcc -o zombie_prevention zombie_prevention.c && ./zombie_prevention
+Explanation: The C program forks three child processes. Each child prints its PID and exits immediately. The parent process waits for each child using `wait()`, which cleans up the child's exit status and prevents zombies. The parent prints the PID of each cleaned up child. After all children are reaped, no zombie processes remain.
+
+Sample output (actual PIDs will vary):
+Child process 1 (PID=12345) started, exiting now.
+Child process 2 (PID=12346) started, exiting now.
+Child process 3 (PID=12347) started, exiting now.
+Parent cleaned up child with PID 12345
+Parent cleaned up child with PID 12346
+Parent cleaned up child with PID 12347
+All children have been reaped. No zombie processes remain.

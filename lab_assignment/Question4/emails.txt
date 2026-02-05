@@ -1,0 +1,11 @@
+user1@example.com
+john_doe@domain.com
+Alice123@company.com
+invalid-email@domain
+bob@company.org
+user2@Example.Com
+coolguy123@cool.com
+repeat@domain.com
+repeat@domain.com
+bad@sub.domain.com
+123@letters.com

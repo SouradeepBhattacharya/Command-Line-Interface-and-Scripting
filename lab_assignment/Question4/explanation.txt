@@ -1,0 +1,19 @@
+Command: ./emailcleaner.sh
+Explanation: The script reads emails.txt and uses an extended regular expression to match valid emails of the form letters/digits, followed by '@', followed by only letters, ending with '.com'. It writes valid emails to valid.txt after sorting and removing duplicates. Other entries are written to invalid.txt.
+Output:
+Valid email addresses have been saved to 'valid.txt'.
+Invalid email addresses have been saved to 'invalid.txt'.
+
+Contents of valid.txt:
+123@letters.com
+Alice123@company.com
+coolguy123@cool.com
+repeat@domain.com
+user1@example.com
+
+Contents of invalid.txt:
+john_doe@domain.com
+invalid-email@domain
+bob@company.org
+user2@Example.Com
+bad@sub.domain.com

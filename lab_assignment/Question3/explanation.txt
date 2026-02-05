@@ -1,0 +1,14 @@
+Command: ./validate_results.sh
+Explanation: The script reads marks.txt line by line, splitting on commas. It trims whitespace and checks each subject's score against the passing mark (33). Students who fail exactly one subject are printed and counted, as are those who pass all subjects. Others are ignored. The results are also written to separate files (failed_one.txt and passed_all.txt).
+Output:
+Students who failed in exactly one subject:
+102 - Bob
+103 - Charlie
+
+Students who passed in all subjects:
+101 - Alice
+104 - Diana
+
+Summary:
+Count of students who failed exactly one subject: 2
+Count of students who passed in all subjects: 2

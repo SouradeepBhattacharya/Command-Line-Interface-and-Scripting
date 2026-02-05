@@ -1,0 +1,13 @@
+Command: ./sync.sh dirA dirB
+Explanation: The script compares two directories non‑recursively. It lists files present only in dirA using comm, lists files present only in dirB, and compares files with the same name using cmp. Results are saved to text files and printed.
+Output:
+Files present only in dirA:
+uniqueA.sh
+
+Files present only in dirB:
+file3.txt
+uniqueB.py
+
+File content comparison (for files with the same name):
+file1.txt: different
+file2.txt: identical

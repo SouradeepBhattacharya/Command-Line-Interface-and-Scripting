@@ -1,0 +1,8 @@
+Command: ./metrics.sh input.txt
+Explanation: The script extracts alphanumeric words from the file, converts them to lowercase, and uses awk to find the longest and shortest word lengths and values. It computes the average word length and counts unique words using sort and uniq.
+Output:
+Text metrics for 'input.txt':
+Longest word: longestwordlongestwordlongestword
+Shortest word: a
+Average word length: 6.44
+Total unique words: 15

@@ -1,0 +1,26 @@
+Command: ./patterns.sh input.txt
+Explanation: The script converts the input into lowercase words and classifies each word. Words containing only vowels (aeiou) are written to vowels.txt, words containing only consonants to consonants.txt, and words that contain both vowels and consonants but start with a consonant to mixed.txt. It ignores case while checking patterns.
+Output:
+Words containing only vowels written to vowels.txt
+Words containing only consonants written to consonants.txt
+Words containing both vowels and consonants (starting with a consonant) written to mixed.txt
+
+Contents of vowels.txt:
+a
+aeiou
+
+Contents of consonants.txt:
+bcdfg
+rhythm
+crypts
+
+Contents of mixed.txt:
+quick
+brown
+fox
+jumps
+the
+lazy
+dog
+consonant
+vowel
